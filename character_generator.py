@@ -33,6 +33,12 @@ def displayBackground():
     #Prints a random background from list
     backgroundRandom = backgrounds[random.randint(0,16)]
 
+    #Uses correct article ('an' vs. 'a') for backgrounds beginning with a vowel
+    if backgroundRandom == 'acolyte' or backgroundRandom == 'entertainer' or backgroundRandom == 'outlander' or backgroundRandom == 'urchin':
+        print('with an ' + backgroundRandom + ' background')
+    else:
+        print('with a ' + backgroundRandom + ' background')
+
 playAgain = 'yes'
 while playAgain == 'yes' or playAgain == 'y':
     displayIntro()

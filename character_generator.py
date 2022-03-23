@@ -19,19 +19,19 @@ def displayIntro():
 
 def displayPersonality():
     #Prints a random personality trait from list
-    print(personalities[random.randint(0,9)], end = ' ')
+    print(personalities[random.randint(0,len(personalities))], end = ' ')
 
 def displayRace():
     #Prints a random race from list
-    print(races[random.randint(0,8)], end = ' ')
+    print(races[random.randint(0,len(races))], end = ' ')
 
 def displayClass():
     #Prints a random class from list
-    print(classes[random.randint(0,12)], end = ' ')
+    print(classes[random.randint(0,len(classes))], end = ' ')
 
 def displayBackground():
     #Prints a random background from list
-    backgroundRandom = backgrounds[random.randint(0,16)]
+    backgroundRandom = backgrounds[random.randint(0,len(backgrounds))]
 
     #Uses correct article ('an' vs. 'a') for backgrounds beginning with a vowel
     if backgroundRandom == 'acolyte' or backgroundRandom == 'entertainer' or backgroundRandom == 'outlander' or backgroundRandom == 'urchin':
